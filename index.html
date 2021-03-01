@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse and  Keyboard Events Demonstration</title>
+    
+</head>
+<body>
+    <h3>Mouse Events</h3>
+    <p id="click" onclick="mouseEvent(this.id)">Click to see effect onClick</p>
+    <p id="dbclick" ondblclick="mouseEvent(this.id)">Double click to see effect onDoubleClick</p>
+    <p id="mouseover" onmouseover="mouseEvent(this.id)">Bring mouse here to see effect onMouseOver</p>
+    <p id="mouseout" onmouseout="mouseEvent(this.id)">Take mouse out to see effect onCMouseOut</p>
+
+    <hr>
+
+    <h3>Keyboards Events</h3>
+    <p id="keyUp">KeyUp in input below to see effect here</p>
+    <label for="inputKeyUp">KeyUp here</label><input type="text" id="inputKeyUp" onkeyup="keyEvent('keyUp')">
+    
+    <br>
+    <p id="keyDown">KeyDown in input below to see effect here</p>
+    <label for="inputKeyDown">KeyDown here</label><input type="text" id="inputKeyDown" onkeyup="keyEvent('keyDown')">
+
+    <br>
+    <p id="keyPress">KeyPress in input below to see effect here</p>
+    <label for="inputKeyPress">KeyDown here</label><input type="text" id="inputKeyPress" onkeyup="keyEvent('keyPress')">
+
+    <!-- <label for="inputKeyPress1">rerads</label><input type="text" id="inputKeyPress1" onkeyup="keyEvent('keyPress')">
+    <button onclick="setInner()">check</button>
+    <h3 id="desti"></h3> -->
+
+    <script src="events.js"></script>
+    <script src="greet.js1"></script>
+    <script>
+        window.alert("Not fake news!");
+        window.alert('JavaScript is awesome!')
+    </script>
+</body>
+</html>
